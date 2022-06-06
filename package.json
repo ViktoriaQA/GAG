@@ -1,0 +1,29 @@
+{
+  "name": "gaq",
+  "version": "1.0.0",
+  "description": "GAQ",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "start": "node -r esm gulpfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViktoriaQA/gaq.git"
+  },
+  "author": "Frantsukh V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViktoriaQA/gaq/issues"
+  },
+  "homepage": "https://github.com/ViktoriaQA/gaq#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/register": "^7.17.7",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  }
+}
