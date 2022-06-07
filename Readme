@@ -1,3 +1,15 @@
 GAQ
-npm i gulp-cli -g  -> global
-npm i gulp -D -> local 
+1) npm i gulp-cli -g  -> global
+   npm i gulp -D -> local 
+
+2) folder dist -> папка результатів (копіювання файлів з src)
+    copy.js
+3) Видалення файлів
+    reset.js (del - ф-ція) для імпорту потрібна бібліотека del
+    npm i -D del
+4)
+
+
+
+
+

@@ -8,11 +8,12 @@ global.app = {
 }
 
 import {copy} from './gulp/tasks/copy.js';
+import {reset} from './gulp/tasks/reset.js';
 
 function watcher (){
     gulp.watch(path.watch.files, copy)
 }
 
-const dev = gulp.series(copy, watcher); // виконує задачі послідовно
+const dev = gulp.series(reset, copy, watcher); // виконує задачі послідовно (reset на поч. щоб очищало папку dist потім copy)
 
-gulp.task('default',dev)
+gulp.task('default', dev)
