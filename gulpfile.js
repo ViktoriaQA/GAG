@@ -7,5 +7,5 @@ global.app = {
     gulp: gulp
 }
 
-import {copy} from '.gulp/tasks/copy.js';
+import {copy} from './gulp/tasks/copy.js';
 gulp.task('default',copy)
