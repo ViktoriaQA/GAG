@@ -8,7 +8,17 @@ GAQ
     reset.js (del - ф-ція) для імпорту потрібна бібліотека del
     npm i -D del
 4)
-
+5) For img 
+   VScode install PathAutocomplite
+        F1 search Oprn settings JSON
+        add 
+        "path-autocomplete.pathMappings": {
+                "@img":"${folder}/src/img",
+                "@scss":"${folder}/src/scss",
+                "@js":"${folder}/src/js",
+             } 
+     npm i -D gulp-webp-html-nosvg - якість фото .svg
+     npm i -D gulp-version-number - очищає кеш в браузері клієнта
 
 
 
