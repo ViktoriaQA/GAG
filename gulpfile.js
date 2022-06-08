@@ -12,14 +12,15 @@ global.app = {
 import {copy} from './gulp/tasks/copy.js';
 import {reset} from './gulp/tasks/reset.js';
 import {html} from './gulp/tasks/html.js';
+import {server} from './gulp/tasks/server.js';
 
 
 function watcher (){
     gulp.watch(path.watch.files, copy)
-    gulp.watch(path.watch.html, copy)
+    gulp.watch(path.watch.html, html)
 }
 const mainTask = gulp.parallel(copy, html) // копіювання html файлів та інших файлів
 
-const dev = gulp.series(reset, mainTask, watcher); // виконує задачі послідовно (reset на поч. щоб очищало папку dist потім copy)
+const dev = gulp.series(reset, mainTask, gulp.parallel(watcher,server)); // виконує задачі послідовно (reset на поч. щоб очищало папку dist потім copy)
 
 gulp.task('default', dev)

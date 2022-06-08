@@ -31,4 +31,5 @@ export const html = () => {
             })
         )
         .pipe(app.gulp.dest(app.path.build.html)) // folder html
+        .pipe(app.plugins.browsersync.stream()) // update html pages
 }

@@ -24,4 +24,9 @@ GAQ
     npm i -D gulp-plumber - обробка помилок при роботі з файлами
     npm i -D gulp-notify  - виведення повідомлень про помилки
 
+7) Install plugins for show browser
+   1) npm i -D gulp-browsersync - 
+        create server.js in task folder
+   2) update html pages
+     add .pipe(app.plugins.browsersync.stream()) in html.js
 
