@@ -18,8 +18,10 @@ GAQ
                 "@js":"${folder}/src/js",
              } 
      npm i -D gulp-webp-html-nosvg - якість фото .svg
-     npm i -D gulp-version-number - очищає кеш в браузері клієнта
-
-
+     npm i -D gulp-version-number - очищає кеш в браузері 
+     
+6) Install plagins 
+    npm i -D gulp-plumber - обробка помилок при роботі з файлами
+    npm i -D gulp-notify  - виведення повідомлень про помилки
 
 
