@@ -30,3 +30,9 @@ GAQ
    2) update html pages
      add .pipe(app.plugins.browsersync.stream()) in html.js
 
+8) SCSS to CSS for build folder (dist)
+   add scss.js 
+   npm i -D gulp-scss 
+   npm i -D scss 
+
+
