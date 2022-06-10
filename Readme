@@ -34,5 +34,7 @@ GAQ
    add scss.js 
    npm i -D gulp-scss 
    npm i -D scss 
-
+ 8.1 Add plagins:
+        npm i -D gulp-clean-css gulp-webpcss gulp-autoprefixer  gulp-group-css-media-queries
+        npm i -D webp-converter@2.2.3
 

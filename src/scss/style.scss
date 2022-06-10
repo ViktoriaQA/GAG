@@ -1,6 +1,19 @@
 body{
     background-color: black;
+    span {
+        color: #FFFF;
+    }
+    background: '@img/qanew.png' 0 0 no-repeat;
+    background-image:url('@img/qanew.png') 0 0 no-repeat;
 }
-p{
-    color: #FFFF;
+
+@media (max-width: 786px) {
+    span {
+        font-size: 20px;
+    }
+}
+@media (max-width: 786px) {
+    body {
+        color: aqua;
+    }
 }
