@@ -4,6 +4,8 @@ import {plugins} from './gulp/config/plugins.js'
 
 
 global.app = {
+    isBuild: process.argv.includes('--build'),
+    isDev: !process.argv.includes('--build'),
     path: path,
     gulp: gulp,
     plugins: plugins
@@ -35,5 +37,8 @@ const mainTask = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images))
 
 
 const dev = gulp.series(reset, mainTask, gulp.parallel(watcher,server)); // виконує задачі послідовно (reset на поч. щоб очищало папку dist потім copy)
+const build = gulp.series(reset, mainTask);
+export {dev} 
+export {build}
 
 gulp.task('default', dev);

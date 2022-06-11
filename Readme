@@ -63,6 +63,7 @@ Setting Gulp Project
     ??? Error converter
       Fix find node_modules/gulp-fonter/dist/index.js to fixed search newFont.path = source.dirname + '\\' + source.stem + '.' + type;
       change '\\' on '/' (for Linux)
+
 12) SVG ICONS
     +path for only with src folder 
     +import plugins
@@ -70,6 +71,24 @@ Setting Gulp Project
     +Import svgSprive to gulpfile
     +add  scripts "svgSprive": "gulp svgSprive" in package.json for start task svgSprive 
         npm run svgSprive created icons.svg container for all icon.svg adn stack is instruction on html 
+
+13) DEV & BUILD(Prodaction) Modes 
+    +import plagins ifPlugin in plagins.js
+         npm i -D gulp-if 
+    +gulpfile add      
+    +update version if isBuild for html.js task folder
+    +update version if isBuild for images.js task folder
+    +update version if isBuild for scss.js task folder
+    +update js.js task folder 
+    +update gulpfile:       const build = gulp.series(reset, mainTask);
+                            export {dev} 
+                            export {build}
+    +add package.json start script dev|build
+
+
+
+
+
 
 
        
