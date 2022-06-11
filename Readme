@@ -1,4 +1,5 @@
-GAQ
+Setting Gulp Project
+
 1) npm i gulp-cli -g  -> global
    npm i gulp -D -> local 
 
@@ -62,6 +63,15 @@ GAQ
     ??? Error converter
       Fix find node_modules/gulp-fonter/dist/index.js to fixed search newFont.path = source.dirname + '\\' + source.stem + '.' + type;
       change '\\' on '/' (for Linux)
+12) SVG ICONS
+    +path for only with src folder 
+    +import plugins
+        npm i -D gulp-svg-sprite
+    +Import svgSprive to gulpfile
+    +add  scripts "svgSprive": "gulp svgSprive" in package.json for start task svgSprive 
+        npm run svgSprive created icons.svg container for all icon.svg adn stack is instruction on html 
+
+
        
 
 
