@@ -3,8 +3,7 @@ body{
     span {
         color: #FFFF;
     }
-    background: '@img/qanew.png' 0 0 no-repeat;
-    background-image:url('@img/qanew.png') 0 0 no-repeat;
+    background:url('@img/qanew.png') 0 0 no-repeat;
 }
 
 @media (max-width: 786px) {

@@ -44,7 +44,15 @@ GAQ
 
     npm i -D webpack webpack-stream for js file in task folder
 
-    9.1 +Other plagins for js files link https://swiperjs.com/get-started
+    9.1 +Other plugins for js files link https://swiperjs.com/get-started
          npm i -D swiper
+10)   Images
+        +path for Images
+        +images.js in task folder
+            add npm i -D gulp-webp gulp-imagemin
+        + add images task in gulpfile
+        + plagins.js -> npm i -D gulp-newer and pull in images.js
+       
+
 
 

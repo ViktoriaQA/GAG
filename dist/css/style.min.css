@@ -1,1 +1,1 @@
-.no-webp body{background-image:url(../img/qanew.png) 0 0 no-repeat}body{background-color:#000;background:"../img/qanew.png" 0 0 no-repeat}body span{color:#fff}@media (max-width:786px){span{font-size:20px}body{color:#0ff}}.webp body{background-image:url(../img/qanew.webp) 0 0 no-repeat}
+.no-webp body{background:url(../img/qanew.png) 0 0 no-repeat}body{background-color:#000}body span{color:#fff}@media (max-width:786px){span{font-size:20px}body{color:#0ff}}.webp body{background:url(../img/qanew.webp) 0 0 no-repeat}
