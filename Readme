@@ -52,6 +52,16 @@ GAQ
             add npm i -D gulp-webp gulp-imagemin
         + add images task in gulpfile
         + plagins.js -> npm i -D gulp-newer and pull in images.js
+11) Fonts
+    +path for only with build folder      
+    +import plugins
+        npm i -D fs               /  worked file system
+        npm i -D gulp-fonter      / otf to ttf & woff
+        npm i -D gulp-ttf2woff2   / ttf2 to woff2
+    + import otToTtf, ttfToWoff,fontsStyle to gulpfile     
+    ??? Error converter
+      Fix find node_modules/gulp-fonter/dist/index.js to fixed search newFont.path = source.dirname + '\\' + source.stem + '.' + type;
+      change '\\' on '/' (for Linux)
        
 
 

@@ -2,7 +2,7 @@
 import * as nodePath from 'path';  //ES6
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const buildFolder = `./dist`;
+const buildFolder = `./build`;
 const srcFolder = `./src`;
 
 export const path = {
@@ -11,7 +11,8 @@ export const path = {
         css: `${buildFolder}/css/`,
         html: `${buildFolder}/`,
         files: `${buildFolder}/files/`,
-        images: `${buildFolder}/img/`
+        images: `${buildFolder}/img/`,
+        fonts: `${buildFolder}/fonts/`
 
     },
     src: {
