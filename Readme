@@ -37,4 +37,14 @@ GAQ
  8.1 Add plagins:
         npm i -D gulp-clean-css gulp-webpcss gulp-autoprefixer  gulp-group-css-media-queries
         npm i -D webp-converter@2.2.3
+9) JS        
+    +path for js files
+    +create js in task folder
+    +gulpfile 
+
+    npm i -D webpack webpack-stream for js file in task folder
+
+    9.1 +Other plagins for js files link https://swiperjs.com/get-started
+         npm i -D swiper
+
 
