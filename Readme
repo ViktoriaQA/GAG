@@ -85,6 +85,12 @@ Setting Gulp Project
                             export {build}
     +add package.json start script dev|build
 
+14) ZIP 
+    + zip.js in task folder
+    + npm i -D gulp-zip
+    +update gulpfile 
+    +update package.json 
+        +  scripts "zip": "gulp deployZip --build" in package.json for start task svgSprive 
 
 
 

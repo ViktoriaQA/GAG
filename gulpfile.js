@@ -20,6 +20,7 @@ import {js} from './gulp/tasks/js.js';
 import {images} from './gulp/tasks/images.js';
 import {otfToTtf, ttfToWoff, fontsStyle} from './gulp/tasks/fonts.js';
 import {svgSprive} from './gulp/tasks/svgSprive.js';
+import {zip} from './gulp/tasks/zip.js';
 
 
 function watcher (){
@@ -32,13 +33,15 @@ function watcher (){
 export {svgSprive} // starts npm run svgSprive
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
-
 const mainTask = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images)); // копіювання html файлів та інших файлів
 
 
 const dev = gulp.series(reset, mainTask, gulp.parallel(watcher,server)); // виконує задачі послідовно (reset на поч. щоб очищало папку dist потім copy)
 const build = gulp.series(reset, mainTask);
+const deployZip = gulp.series(reset, mainTask, zip);
+
 export {dev} 
 export {build}
+export {deployZip}
 
 gulp.task('default', dev);
