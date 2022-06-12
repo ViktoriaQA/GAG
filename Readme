@@ -90,10 +90,12 @@ Setting Gulp Project
     + npm i -D gulp-zip
     +update gulpfile 
     +update package.json 
-        +  scripts "zip": "gulp deployZip --build" in package.json for start task svgSprive 
-
-
-
+        +  scripts "zip": "gulp deployZip --build" in package.json for converting build folder to zip  
+15) Push files to ftp server
+     + ftp.js in task folder
+     + npm i -D vinyl-ftp gulp-util
+     + update gulpfile 
+      +  scripts "ftp": "gulp deployFtp --build" in package.json for push ftp server 
 
 
 

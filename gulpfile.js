@@ -21,14 +21,15 @@ import {images} from './gulp/tasks/images.js';
 import {otfToTtf, ttfToWoff, fontsStyle} from './gulp/tasks/fonts.js';
 import {svgSprive} from './gulp/tasks/svgSprive.js';
 import {zip} from './gulp/tasks/zip.js';
+import {ftp} from './gulp/tasks/ftp.js';
 
 
 function watcher (){
-    gulp.watch(path.watch.files, copy);
-    gulp.watch(path.watch.html, html);
-    gulp.watch(path.watch.scss, scss);
-    gulp.watch(path.watch.js, js);
-    gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.files, copy); 
+    gulp.watch(path.watch.html, gulp.series(html,ftp));     // auto push to server ftp /html change gulp.series(html,ftp) 
+    gulp.watch(path.watch.scss, scss);     // gulp.series(scss,ftp) 
+    gulp.watch(path.watch.js, js);         // gulp.series(js,ftp) 
+    gulp.watch(path.watch.images, images); // gulp.series(images,ftp) 
 }
 export {svgSprive} // starts npm run svgSprive
 
@@ -39,9 +40,11 @@ const mainTask = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images))
 const dev = gulp.series(reset, mainTask, gulp.parallel(watcher,server)); // виконує задачі послідовно (reset на поч. щоб очищало папку dist потім copy)
 const build = gulp.series(reset, mainTask);
 const deployZip = gulp.series(reset, mainTask, zip);
+const deployFtp = gulp.series(reset, mainTask, ftp);
 
 export {dev} 
 export {build}
 export {deployZip}
+export {deployFtp}
 
 gulp.task('default', dev);

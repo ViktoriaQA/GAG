@@ -35,7 +35,7 @@ export const path = {
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    ftp: ``  // remove ftp server
+    ftp: `test`  // folder remove ftp server
 
 
 }
